@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Corter Premium, barbearia em Campinas. Cortes, barba e atendimento com hora marcada.">
+    <meta name="theme-color" content="#14181C">
+    <title>Corter Premium | Barbearia em Campinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&family=Rye&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314181C'/%3E%3Cpath d='M18 42 43 17l4 4-25 25z' fill='%23B08D57'/%3E%3Cpath d='m17 36 11 11' stroke='%23F2F2F2' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho e navegação principal -->
+    <header class="cabecalho">
+        <div class="conteudo cabecalho-conteudo">
+            <a class="marca" href="#inicio" aria-label="Corter Premium - início">
+                <span class="marca-simbolo" aria-hidden="true">✂</span>
+                <span>Corter Premium</span>
+            </a>
+
+            <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-principal" id="menu-principal" aria-label="Navegação principal">
+                <a href="#sobre">A barbearia</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#barbeiros">Barbeiros</a>
+                <a href="#localizacao">Localização</a>
+                <a class="botao botao-menu-agendar" href="#agendamento">Agendar horário</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner principal -->
+        <section class="banner" id="inicio">
+            <img class="banner-imagem" src="imagens/Barba.jpg" alt="Barbeiro cuidando da barba de um cliente na Corter Premium">
+            <div class="banner-sombra"></div>
+            <div class="conteudo banner-conteudo">
+                <p class="banner-destaque">Seu estilo começa aqui</p>
+                <h1>Corte preciso.<br>Presença marcante.</h1>
+                <p class="banner-texto">Atendimento com hora marcada, cuidado em cada detalhe e o visual certo para você.</p>
+                <div class="banner-acoes">
+                    <a class="botao botao-whatsapp" href="https://wa.me/551999781156?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Corter%20Premium%20para%20..." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+                    <a class="botao botao-secundario" href="#servicos">Ver serviços</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apresentação da barbearia -->
+        <section class="secao sobre" id="sobre">
+            <div class="conteudo sobre-conteudo">
+                <div class="sobre-texto">
+                    <p class="rotulo">Há 1 ano em Campinas</p>
+                    <h2>Tradição no cuidado. Estilo no resultado.</h2>
+                    <p>A Corter Premium une o ritual da barbearia clássica a um atendimento atual e pontual. Madeira, couro e cadeiras de barbeiro criam o ambiente certo para você desacelerar e sair renovado.</p>
+                    <p>Trabalhamos com hora marcada para dedicar atenção total a cada corte, barba e acabamento.</p>
+                </div>
+                <div class="sobre-detalhes" aria-label="Diferenciais da barbearia">
+                    <div><strong>01</strong><span>Atendimento com hora marcada</span></div>
+                    <div><strong>02</strong><span>Acabamento cuidadoso</span></div>
+                    <div><strong>03</strong><span>Ambiente confortável</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="secao secao-clara" id="servicos">
+            <div class="conteudo">
+                <div class="titulo-secao">
+                    <p class="rotulo">Escolha seu cuidado</p>
+                    <h2>Serviços</h2>
+                    <p>Do corte clássico à transformação completa, sempre com técnica e atenção.</p>
+                </div>
+                <div class="grade-servicos">
+                    <article class="cartao-servico">
+                        <span class="icone-servico" aria-hidden="true">✂</span>
+                        <h3>Corte</h3><p>Estilo definido para valorizar seu rosto.</p>
+                        <div><span>45 min</span><strong>R$ 45</strong></div>
+                    </article>
+                    <article class="cartao-servico">
+                        <span class="icone-servico" aria-hidden="true">♜</span>
+                        <h3>Barba</h3><p>Desenho, alinhamento e acabamento preciso.</p>
+                        <div><span>35 min</span><strong>R$ 35</strong></div>
+                    </article>
+                    <article class="cartao-servico cartao-destaque">
+                        <span class="selo">Mais pedido</span>
+                        <span class="icone-servico" aria-hidden="true">✦</span>
+                        <h3>Corte + Barba</h3><p>O cuidado completo em uma só visita.</p>
+                        <div><span>1h 15 min</span><strong>R$ 70</strong></div>
+                    </article>
+                    <article class="cartao-servico">
+                        <span class="icone-servico" aria-hidden="true">⌁</span>
+                        <h3>Pezinho</h3><p>Contornos renovados entre um corte e outro.</p>
+                        <div><span>20 min</span><strong>R$ 35</strong></div>
+                    </article>
+                    <article class="cartao-servico">
+                        <span class="icone-servico" aria-hidden="true">⌇</span>
+                        <h3>Sobrancelha</h3><p>Limpeza discreta e desenho natural.</p>
+                        <div><span>20 min</span><strong>R$ 35</strong></div>
+                    </article>
+                    <article class="cartao-servico">
+                        <span class="icone-servico" aria-hidden="true">◇</span>
+                        <h3>Platinado</h3><p>Clareamento uniforme com finalização.</p>
+                        <div><span>2h</span><strong>R$ 90</strong></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mais procurados -->
+        <section class="secao mais-procurados">
+            <div class="conteudo">
+                <div class="titulo-secao titulo-claro">
+                    <p class="rotulo">Favoritos dos clientes</p>
+                    <h2>Mais Procurados</h2>
+                </div>
+                <div class="grade-procurados">
+                    <article class="cartao-procurado">
+                        <img src="imagens/Corte normal.jpg" alt="Corte masculino moderno com degradê">
+                        <div><h3>Corte Premium</h3><p>Corte personalizado e finalização.</p><strong>R$ 45</strong></div>
+                    </article>
+                    <article class="cartao-procurado">
+                        <img src="imagens/Barba.jpg" alt="Barbeiro aparando a barba de um cliente">
+                        <div><h3>Corte + Barba</h3><p>Visual completo com condição especial.</p><strong>R$ 70</strong></div>
+                    </article>
+                    <article class="cartao-procurado">
+                        <img src="imagens/Corte infantil (1).jpg" alt="Corte infantil moderno e bem acabado">
+                        <div><h3>Corte Infantil</h3><p>Cuidado e paciência para os pequenos.</p><strong>R$ 40</strong></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabela resumida de preços -->
+        <section class="secao secao-clara precos" id="precos">
+            <div class="conteudo precos-conteudo">
+                <div class="precos-introducao">
+                    <p class="rotulo">Valores transparentes</p>
+                    <h2>Tabela de preços</h2>
+                    <p>Escolha o serviço e reserve seu horário pelo WhatsApp.</p>
+                    <a class="link-dourado" href="https://wa.me/551999781156?text=Ol%C3%A1%21%20Gostaria%20de%20ver%20todos%20os%20servi%C3%A7os%20da%20Corter%20Premium." target="_blank" rel="noopener">Ver todos os serviços</a>
+                </div>
+                <div class="tabela-container">
+                    <table>
+                        <caption class="visualmente-oculto">Preços resumidos dos serviços</caption>
+                        <tbody>
+                            <tr><th scope="row">Corte</th><td>45 min</td><td>R$ 45</td></tr>
+                            <tr><th scope="row">Barba</th><td>35 min</td><td>R$ 35</td></tr>
+                            <tr><th scope="row">Corte + Barba</th><td>1h 15 min</td><td>R$ 70</td></tr>
+                            <tr><th scope="row">Corte infantil</th><td>45 min</td><td>R$ 40</td></tr>
+                            <tr><th scope="row">Platinado</th><td>2h</td><td>R$ 90</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipe -->
+        <section class="secao barbeiros" id="barbeiros">
+            <div class="conteudo">
+                <div class="titulo-secao titulo-claro">
+                    <p class="rotulo">Técnica e personalidade</p>
+                    <h2>Nossos Barbeiros</h2>
+                </div>
+                <div class="grade-barbeiros">
+                    <article class="cartao-barbeiro">
+                        <img src="imagens/Corte normal.jpg" alt="Profissional especialista em cortes modernos">
+                        <div><h3>Lucas</h3><p>Cortes modernos e degradê</p><a href="https://www.instagram.com/cortespremium/" target="_blank" rel="noopener">@cortespremium</a></div>
+                    </article>
+                    <article class="cartao-barbeiro">
+                        <img src="imagens/Barba.jpg" alt="Profissional especialista em barba e acabamento">
+                        <div><h3>Rafael</h3><p>Barba e acabamento</p><a href="https://www.instagram.com/cortespremium/" target="_blank" rel="noopener">@cortespremium</a></div>
+                    </article>
+                    <article class="cartao-barbeiro">
+                        <img src="imagens/Corte infantil (1).jpg" alt="Profissional especialista em corte infantil">
+                        <div><h3>Matheus</h3><p>Corte infantil e clássico</p><a href="https://www.instagram.com/cortespremium/" target="_blank" rel="noopener">@cortespremium</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="secao secao-clara depoimentos">
+            <div class="conteudo">
+                <div class="titulo-secao">
+                    <p class="rotulo">Quem passa, recomenda</p>
+                    <h2>Depoimentos</h2>
+                </div>
+                <div class="grade-depoimentos">
+                    <blockquote>
+                        <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+                        <p>“Atendimento pontual e corte impecável. Entenderam exatamente o que eu queria.”</p>
+                        <cite>André M.</cite>
+                    </blockquote>
+                    <blockquote>
+                        <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+                        <p>“Ambiente muito agradável e uma barba feita com bastante cuidado.”</p>
+                        <cite>Bruno S.</cite>
+                    </blockquote>
+                    <blockquote>
+                        <div class="estrelas" aria-label="5 de 5 estrelas">★★★★★</div>
+                        <p>“Meu filho ficou tranquilo durante todo o corte. Atendimento excelente.”</p>
+                        <cite>Fernando R.</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Localização -->
+        <section class="localizacao" id="localizacao">
+            <div class="conteudo localizacao-conteudo">
+                <div class="localizacao-informacoes">
+                    <p class="rotulo">Venha nos visitar</p>
+                    <h2>Localização</h2>
+                    <address>
+                        <strong>Rua ######, 639</strong>
+                        <span>Campinas — SP</span>
+                    </address>
+                    <div class="horario">
+                        <span>Segunda a sábado</span>
+                        <strong>10h às 20h</strong>
+                    </div>
+                </div>
+                <iframe class="mapa" title="Mapa da Corter Premium em Campinas" src="https://www.google.com/maps?q=Campinas%20SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Agendamento -->
+        <section class="secao agendamento" id="agendamento">
+            <div class="conteudo agendamento-conteudo">
+                <div class="agendamento-texto">
+                    <p class="rotulo">Seu horário, do seu jeito</p>
+                    <h2>Agende seu corte</h2>
+                    <p>Preencha os dados e confirme a disponibilidade diretamente pelo WhatsApp.</p>
+                </div>
+                <form class="formulario-agendamento" id="formulario-agendamento">
+                    <div class="campo">
+                        <label for="nome">Seu nome</label>
+                        <input id="nome" name="nome" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="campo">
+                        <label for="servico">Serviço</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione</option>
+                            <option>Corte</option>
+                            <option>Barba</option>
+                            <option>Corte + Barba</option>
+                            <option>Pezinho</option>
+                            <option>Sobrancelha</option>
+                            <option>Platinado</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="data">Data</label>
+                        <input id="data" name="data" type="date" required>
+                    </div>
+                    <div class="campo">
+                        <label for="horario">Horário</label>
+                        <select id="horario" name="horario" required>
+                            <option value="">Selecione</option>
+                            <option>10:00</option><option>11:00</option><option>12:00</option>
+                            <option>13:00</option><option>14:00</option><option>15:00</option>
+                            <option>16:00</option><option>17:00</option><option>18:00</option>
+                            <option>19:00</option><option>20:00</option>
+                        </select>
+                    </div>
+                    <button class="botao botao-whatsapp botao-enviar" type="submit">Continuar no WhatsApp</button>
+                    <p class="aviso-formulario" id="aviso-formulario" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Chamada promocional -->
+        <section class="cta">
+            <div class="conteudo cta-conteudo">
+                <div><p class="rotulo">Condição especial</p><h2>Primeira visita com desconto</h2><p>Conheça a Corter Premium e consulte a condição disponível para seu primeiro corte.</p></div>
+                <a class="botao botao-claro" href="https://wa.me/551999781156?text=Ol%C3%A1%21%20Quero%20saber%20sobre%20o%20desconto%20da%20primeira%20visita%20na%20Corter%20Premium." target="_blank" rel="noopener">Quero meu desconto</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="conteudo rodape-conteudo">
+            <div class="rodape-marca"><span class="marca-simbolo" aria-hidden="true">✂</span><strong>Corter Premium</strong><p>Seu estilo, cuidado nos detalhes.</p></div>
+            <div><h2>Contato</h2><p>Rua ######, 639<br>Campinas — SP</p><a href="tel:+551999781156">(19) 99781-1156</a><a href="https://www.instagram.com/cortespremium/" target="_blank" rel="noopener">Instagram: Cortes Premium</a></div>
+            <div><h2>Horários</h2><p>Segunda a sábado<br>10h às 20h</p></div>
+        </div>
+        <div class="conteudo direitos"><p>© <span id="ano-atual">2026</span> Corter Premium. Todos os direitos reservados.</p></div>
+    </footer>
+
+    <a class="whatsapp-flutuante" href="https://wa.me/551999781156?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Corter%20Premium%20para%20..." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">WA</a>
+</body>
+</html>
